@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(revert(number: 514678937204632))
+        print(revertAndAdd(number: 9435239 ))
+        print(isPalindrome(number: 1001))
     }
     
     func revertAndAdd(number: Int) -> Int {
@@ -35,6 +36,10 @@ class ViewController: UIViewController {
         
         return revertedNumber!
         
+    }
+    
+    func isPalindrome(number: Int) -> Bool {
+        return number == revert(number: number)
     }
 
 }
